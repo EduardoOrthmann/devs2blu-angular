@@ -1,8 +1,21 @@
 <div class="wrapper">
-  <h1>Olá pessoas</h1>
-  <h3>Eduardo</h3>
+  <div>
+    <h1>Olá pessoas</h1>
+    <span class="name">{{ name }}</span>
 
-  <p>Este não é meu primeiro projeto utilizando Angular!</p>
+    <p>Este não é meu primeiro projeto utilizando Angular!</p>
 
-  <button type="button">Click</button>
+    <app-button label="Clique aqui" (clicked)="handleButtonClick()"></app-button>
+  </div>
+
+  <div>
+    <h1>Média</h1>
+
+    <input type="number" [(ngModel)]="firstGrade" placeholder="Nota 1" />
+    <input type="number" [(ngModel)]="secondGrade" placeholder="Nota 2" />
+    <input type="number" [(ngModel)]="thirdGrade" placeholder="Nota 3" />
+
+    <app-button label="Calcular média" (clicked)="handleCalculateAverageClick()"></app-button>
+    <span *ngIf="average !== null">{{ average }}</span>
+  </div>
 </div>
