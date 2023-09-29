@@ -17,6 +17,6 @@ export class AppComponent {
   }
 
   handleCalculateAverageClick() {
-    this.average = (this.firstGrade + this.secondGrade + this.thirdGrade) / 3;
+    this.average = (Number(this.firstGrade) + Number(this.secondGrade) + Number(this.thirdGrade)) / 3;
   }
 }
