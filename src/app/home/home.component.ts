@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: 'app-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.scss']
 })
-export class AppComponent {
+export class HomeComponent {
   name = 'Eduardo';
 
   firstGrade = 0;
@@ -45,7 +45,7 @@ export class AppComponent {
   handleCountVowelsAndConsonantsClick() {
     let vowels = 0;
     let consonants = 0;
-    
+
     for (const letter of this.vowelsAndConsonantsText) {
       if (/[aeiou]/.test(letter)) vowels++;
       else consonants++;
