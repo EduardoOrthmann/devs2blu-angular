@@ -1,17 +1,21 @@
-.wrapper {
-  display: flex;
-  gap: 3rem;
-  flex-wrap: wrap;
-  padding: 1rem;
-}
+ul {
+  list-style: none;
 
-.wrapper > * {
-  flex: 1;
-  display: flex;
-  min-width: 250px;
-}
+  li {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    font-size: 1.5em;
 
-.name {
-  font-size: 1.5rem;
-  font-family: 'Montserrat', sans-serif;
+    a {
+      color: #fff;
+      transition: color 0.2s ease-in-out;
+      text-decoration: underline;
+
+      &:hover {
+        color: #ccc;
+      }
+    }
+  }
 }

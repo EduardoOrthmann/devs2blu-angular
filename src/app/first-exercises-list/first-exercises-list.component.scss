@@ -1,0 +1,17 @@
+.wrapper {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.wrapper > * {
+  flex: 1;
+  display: flex;
+  min-width: 250px;
+}
+
+.name {
+  font-size: 1.5rem;
+  font-family: 'Montserrat', sans-serif;
+}

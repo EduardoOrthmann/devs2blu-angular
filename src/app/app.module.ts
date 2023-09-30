@@ -9,6 +9,7 @@ import { InputComponent } from './input/input.component';
 import { HeaderComponent } from './header/header.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
+import { FirstExercisesListComponent } from './first-exercises-list/first-exercises-list.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { HomeComponent } from './home/home.component';
     CardComponent,
     InputComponent,
     HeaderComponent,
-    HomeComponent
+    HomeComponent,
+    FirstExercisesListComponent
   ],
   imports: [
     BrowserModule,
