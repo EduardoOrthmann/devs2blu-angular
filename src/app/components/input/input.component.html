@@ -1,6 +1,1 @@
-<ng-container *ngIf="formControl; else inputField">
-  <input [type]="type" [placeholder]="placeholder" [(ngModel)]="value" [formControl]="formControl" [placeholder]="placeholder" [type]="type">
-</ng-container>
-<ng-template #inputField>
-  <input [type]="type" [placeholder]="placeholder" [(ngModel)]="value">
-</ng-template>
+<input [type]="type" [placeholder]="placeholder" [(ngModel)]="value" />

@@ -12,15 +12,13 @@ export class SaveProductComponent {
   constructor(private fb: FormBuilder) {
     this.form = this.fb.group({
       name: ['', Validators.required],
-      price: [0, Validators.required],
-      description: ['', Validators.required],
+      price: ['', Validators.required],
+      description: ['', Validators.required]
     });
   }
 
-  onSubmit() {
-    if (this.form.valid) {
-      console.log(this.form.value);
-    }
+  // create a submit method
+  submit() {
+    console.log(this.form.value);
   }
-
 }

@@ -13,3 +13,8 @@ button {
 button:hover {
   transform: scale(1.05);
 }
+
+button[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

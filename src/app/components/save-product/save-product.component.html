@@ -1,9 +1,9 @@
-<div class="save-product">
-  <form [formGroup]="form" (ngSubmit)="onSubmit()">
-    <app-input [formControl]="form.get('name')" placeholder="Digite o nome"></app-input>
-    <app-input [formControl]="form.get('price')" placeholder="Digite o preço"></app-input>
-    <app-input [formControl]="form.get('description')" placeholder="Digite a descrição"></app-input>
+<div class="wrapper">
+  <form [formGroup]="form" (ngSubmit)="submit()">
+    <app-form-input [control]="form.get('name')" placeholder="Digite o nome" id="name" label="Nome:"></app-form-input>
+    <app-form-input type="number" [control]="form.get('price')" placeholder="Digite o preço" id="price" label="Preço:"></app-form-input>
+    <app-form-input [control]="form.get('description')" placeholder="Digite a descrição" id="description" label="Descrição:"></app-form-input>
 
-    <button type="submit" [disabled]="form.invalid">Submit</button>
+    <app-button type="submit" label="Enviar" [disabled]="form.invalid"></app-button>
   </form>
 </div>

@@ -11,6 +11,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './components/home/home.component';
 import { FirstExercisesListComponent } from './components/first-exercises-list/first-exercises-list.component';
 import { SaveProductComponent } from './components/save-product/save-product.component';
+import { FormInputComponent } from './components/form-input/form-input.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { SaveProductComponent } from './components/save-product/save-product.com
     HeaderComponent,
     HomeComponent,
     FirstExercisesListComponent,
-    SaveProductComponent
+    SaveProductComponent,
+    FormInputComponent
   ],
   imports: [
     BrowserModule,
