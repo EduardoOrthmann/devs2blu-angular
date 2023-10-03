@@ -1,0 +1,9 @@
+<div class="save-product">
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <app-input [formControl]="form.get('name')" placeholder="Digite o nome"></app-input>
+    <app-input [formControl]="form.get('price')" placeholder="Digite o preço"></app-input>
+    <app-input [formControl]="form.get('description')" placeholder="Digite a descrição"></app-input>
+
+    <button type="submit" [disabled]="form.invalid">Submit</button>
+  </form>
+</div>

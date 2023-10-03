@@ -8,7 +8,13 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 export class ButtonComponent {
   @Input()
   label!: string;
-  
+
+  @Input()
+  disabled = false;
+
+  @Input()
+  type: 'button' | 'submit' = 'button';
+
   @Output()
   clicked = new EventEmitter<void>();
 
